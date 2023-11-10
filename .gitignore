@@ -1,52 +1,35 @@
-# Prerequisites
-*.d
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
 
-# Precompiled Headers
-*.gch
-*.pch
+# Dependency directories
+node_modules/
+jspm_packages/
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Distribution directories
+dist/
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Typescript v1 declaration files
+typings/
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# Optional npm cache directory
+.npm
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# Optional eslint cache
+.eslintcache
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
