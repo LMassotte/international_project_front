@@ -1,25 +1,39 @@
 .home-container {
+    background-image: url('../resources/test_background.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    height: 100vh;
     display: flex;
-}
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 
-.menu {
-    width: 200px;
-    background-color: #333;
-    color: white;
-    padding: 20px;
-}
+  .button-container {
+    margin-top: 20px; 
+    display: flex;
+    gap: 10%; 
+    flex-direction: row;
+    justify-content: center;
+  }
 
-.content {
-    flex: 1;
-    padding: 20px;
-}
+  .card-section {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+    margin-top: 15%; 
+  }
 
-@media (max-width: 768px) {
-    .menu {
-        display: none;
-    }
+  .card-section .MuiCard-root {
+    width: 40%; 
+    cursor: pointer;
+    perspective: 1000px; /* Profondeur de la perspective pour le retournement */
+  }
 
-    .content {
-        width: 100%;
-    }
-}
+
+  .card-section .MuiCard-root .MuiCardContent-root {
+    transition: transform 1.5s; /* Durée de l'animation de retournement */
+    transform-style: preserve-3d; /* Utilisé pour activer le rendu 3D de l'élément enfant */
+  }
