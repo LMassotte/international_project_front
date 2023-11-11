@@ -14,9 +14,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #f5f5f5;
   padding: 20px;
-  color: white;
+  color: #282c34;
 }
 
 .App-link {
@@ -31,3 +31,27 @@
     transform: rotate(360deg);
   }
 }
+
+/* body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.main-content {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */

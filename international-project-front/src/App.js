@@ -1,13 +1,12 @@
-import logo from './resources/logo.svg';
+
 import './assets/App.css';
-import MyComponent from './components/Welcomer';
+import HomePage from './pages/HomePage.js';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-	      <img src={logo} className="App-logo" alt="logo" />
-        <MyComponent /> 
+        <HomePage />
       </header>
     </div>
   );
