@@ -1,39 +1,80 @@
+
+
 .home-container {
-    background-image: url('../resources/test_background.jpg');
-    background-size: 100% 100%;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  background-repeat: repeat;
+}
 
-  .button-container {
-    margin-top: 20px; 
-    display: flex;
-    gap: 10%; 
-    flex-direction: row;
-    justify-content: center;
-  }
+.button-section {
+  margin-top: 20px;
+  display: flex;
+  gap: 10%;
+  flex-direction: row;
+  justify-content: center;
+}
 
-  .card-section {
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 20px; 
-    justify-content: center; 
-    margin-top: 15%; 
-  }
+.title-section {
+  margin-top: 250px;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  margin-left: auto; 
+  margin-right: auto; 
+}
 
-  .card-section .MuiCard-root {
-    width: 40%; 
-    cursor: pointer;
-    perspective: 1000px; /* Profondeur de la perspective pour le retournement */
-  }
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 2%;
+}
 
+.card-section .MuiCard-root {
+  width: 600px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  height: 200px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
 
-  .card-section .MuiCard-root .MuiCardContent-root {
-    transition: transform 1.5s; /* Durée de l'animation de retournement */
-    transform-style: preserve-3d; /* Utilisé pour activer le rendu 3D de l'élément enfant */
+.card-section .MuiCard-root.flipped {
+}
+
+.scroll-banner {
+  margin-top: 10px;
+  height: 25vh;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Arial', sans-serif;
+}
+
+.scroll-text {
+  position: absolute;
+  white-space: nowrap;
+  animation: scrollText 10s linear infinite;
+  font-size: 1.5em;
+  margin: 0; 
+  padding: 20px;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(100%);
   }
+  to {
+    transform: translateX(-100%);
+  }
+}

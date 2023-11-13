@@ -1,4 +1,5 @@
 import React from 'react'
+import "../assets/NavigationMenu.css"
 import { styled, alpha } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
@@ -57,48 +58,50 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function NavigationMenu() {
 
     return (
-        <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static" sx={{ backgroundColor: '#0D1117'}}>
-                <Toolbar >
-                    <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-                        <IconButton
-                            size="large"
-                            edge="start"
-                            color="inherit"
-                            aria-label="menu"
-                            sx={{ mr: 2 }}
-                        >
-                            <MenuIcon />
-                        </IconButton>
-                    </Link>
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+        <div className='navigation-menu'>
+            <Box sx={{ flexGrow: 1 }} >
+                <AppBar position="static" sx={{ backgroundColor: '#0D1117' }}>
+                    <Toolbar >
                         <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-                            Organizations
+                            <IconButton
+                                size="large"
+                                edge="start"
+                                color="inherit"
+                                aria-label="menu"
+                                sx={{ mr: 2 }}
+                            >
+                                <MenuIcon />
+                            </IconButton>
                         </Link>
-                    </Typography>
-                    <Search>
-                        <SearchIconWrapper>
-                            <SearchIcon />
-                        </SearchIconWrapper>
-                        <StyledInputBase
-                            placeholder="Search…"
-                            inputProps={{ 'aria-label': 'search' }}
-                        />
-                    </Search>
-                    <Link to="/account" style={{ textDecoration: 'none', color: 'inherit' }}>
-                        <IconButton
-                            size="large"
-                            edge="end"
-                            aria-label="account of current user"
-                            aria-haspopup="true"
-                            color="inherit"
-                        >
-                            <AccountCircle />
-                        </IconButton>
-                    </Link>
+                        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                            <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                Organizations
+                            </Link>
+                        </Typography>
+                        <Search>
+                            <SearchIconWrapper>
+                                <SearchIcon />
+                            </SearchIconWrapper>
+                            <StyledInputBase
+                                placeholder="Search…"
+                                inputProps={{ 'aria-label': 'search' }}
+                            />
+                        </Search>
+                        <Link to="/account" style={{ textDecoration: 'none', color: 'inherit' }}>
+                            <IconButton
+                                size="large"
+                                edge="end"
+                                aria-label="account of current user"
+                                aria-haspopup="true"
+                                color="inherit"
+                            >
+                                <AccountCircle />
+                            </IconButton>
+                        </Link>
 
-                </Toolbar>
-            </AppBar>
-        </Box>
+                    </Toolbar>
+                </AppBar>
+            </Box>
+        </div>
     )
 }
