@@ -6,6 +6,7 @@ import AccountPage from './pages/AccountPage.js';
 import NavigationMenu from './components/NavigationMenu.js';
 import DiscoverPage from './pages/DiscoverPage.js';
 import ProjectCreationPage from './pages/ProjectCreationPage.js';
+import ListingPage from './pages/ListingPage.js';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/signin" element={<SignInPage />} />
             <Route path="/account" element={<AccountPage />} />
             <Route path="/discoverPage" element={<DiscoverPage />} />
+            <Route path="/organizations" element={<ListingPage />} />
             <Route path="/projectCreationPage" element={<ProjectCreationPage />} />
           </Routes>
         </div>
