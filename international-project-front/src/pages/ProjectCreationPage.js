@@ -1,5 +1,5 @@
 import React from 'react'
-import "../assets/DiscoverPage.css"
+import "../assets/GeneralStyles.css"
 import FormStepper from '../components/FormStepper.js'
 
 export default function ProjectCreationPage() {

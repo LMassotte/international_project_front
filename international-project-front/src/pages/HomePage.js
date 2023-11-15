@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import "../assets/Homepage.css"
 import { Button, Typography } from '@mui/material';
 import CardItem from '../components/CardItem';
-import ScrollBanner from '../components/ScrollBanner';
 import { Link } from 'react-router-dom';
 
 export default function Homepage() {
