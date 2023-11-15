@@ -30,7 +30,7 @@ function SignInForm() {
 
             if (response.ok) {
                 const userData = await response.json();
-                localStorage.setItem("userData", JSON.stringify(userData));
+                localStorage.setItem("user", JSON.stringify(userData));
                 navigate("/");
             } else {
                 console.error("Login failed");
